@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #000000;
+    image-resolution: 40px;
+    
+}
+
+h1 {
+    color: goldenrod;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.calculator-container {
+    background-color: goldenrod;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.results {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 5px solid #3498db;
+    display: none;
+}
+
+.results h2 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #2c3e50;
+    padding-top: 15px;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+.info-text {
+    background-color: #eaf7fb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.toggle-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.toggle-btn {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: #eee;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid #ddd;
+}
+
+.toggle-btn:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.toggle-btn:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+.toggle-btn.active {
+    background-color: #3498db;
+    color: white;
+}
+
+.date-info {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+/* Logo Styling */
+.logo-container {
+    text-align: center; /* Center the logo */
+    margin-bottom: 20px; /* Add some space below the logo */
+}
+
+.company-logo {
+    max-width: 200px; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+}

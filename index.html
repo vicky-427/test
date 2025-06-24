@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSS Builders</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header Section -->
+  <header id="header" class="navbar">
+    <nav>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero" style="background-image: url('./assets/main.jpg');">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <img src="./assets/logo.png" alt="logo" class="logo" />
+      <h1 class="title">Building Your Dreams</h1>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about" style="background-image: url('./assets/About.jpg');">
+    <div class="about-content">
+      <h2>About SSS Builders</h2>
+      <p>
+        At <span class="highlight">SSS Builders</span>, we are committed to transforming dreams into reality.
+        With years of expertise in <strong>residential, commercial, and renovation projects</strong>, we deliver high-quality construction with cutting-edge designs.
+      </p>
+      <p>
+        Our team ensures <strong>precision, innovation, and durability</strong> in every project. Let's build something incredible together!
+      </p>
+      <a href="recent.html" class="cta-button">Explore Our Work</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services" style="background-image: url('./assets/service.png');">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card" onclick="window.open('https://forms.gle/qpSv76Mk9YnCueEs8')">
+        <h3>Residential Construction</h3>
+        <p>Custom homes and renovations.</p>
+      </div>
+      <div class="service-card" onclick="window.open('https://forms.gle/qpSv76Mk9YnCueEs8')">
+        <h3>Commercial Construction</h3>
+        <p>Professional spaces designed for success.</p>
+      </div>
+      <div class="service-card" onclick="window.open('https://forms.gle/qpSv76Mk9YnCueEs8')">
+        <h3>Restore</h3>
+        <p>Upgrade existing spaces with modern design.</p>
+      </div>
+      <div class="service-card" onclick="location.href='SSSc.html'">
+        <h3>Cost Construction Calculator</h3>
+        <p>Use to get the approximate cost.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects" style="background-image: url('./assets/proj.png');">
+    <h2>Recent Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" onclick="location.href='recent.html'">
+        <img src="./assets/residential.jpg" alt="Commercial Project">
+        <h3>Commercial Projects</h3>
+        <p>Completed in 2024, a state-of-the-art workspace.</p>
+      </div>
+      <div class="project-card" onclick="location.href='recent.html'">
+        <img src="./assets/Commercial.jpg" alt="Residential Project">
+        <h3>Residential Project</h3>
+        <p>Exquisite design and premium finishes.</p>
+      </div>
+      <div class="project-card" onclick="location.href='recent.html'">
+        <img src="./assets/restore.jpg" alt="Restored Project">
+        <h3>Restored Project</h3>
+        <p>A vibrant retail destination for the community.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer id="contact" class="footer">
+    <div class="footer-grid">
+      <div>
+        <h3>Contact Us</h3>
+        <p>Email: sivaprakash@gmail.com</p>
+        <p>Phone: 6381693896</p>
+        <p>Address: 27A Jaya Paraksh Street, Kottur Maliyandipattinam, Pollachi, 642114</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll navbar background
+    window.addEventListener("scroll", () => {
+      const navbar = document.getElementById("header");
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 1rem;
+      background-color: transparent;
+      transition: background-color 0.3s;
+      z-index: 999;
+    }
+
+    .navbar.scrolled {
+      background-color: black;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: black;
+      transition: color 0.3s;
+    }
+
+    .navbar.scrolled .nav-links a {
+      color: #DAA520;
+    }
+
+    .hero {
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    .about{
+       height: 80vh;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+   .services {
+     text-align: center;
+     font-style: initial;
+      height: 60vh;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .projects{
+       height: 80vh;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(128, 128, 128, 0.7);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      top: 30%;
+    }
+
+    .logo {
+      width: 160px;
+      height: 160px;
+    }
+
+    .title {
+      font-size: 3rem;
+      color: #DAA520;
+      font-weight: bold;
+    }
+
+    .about-content {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 90px;
+      margin: auto;
+      max-width: 600px;
+      color: white;
+      text-align: left;
+      border-radius: 2rem;
+    }
+
+    .highlight {
+      color: #DAA520;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #DAA520;
+      color: black;
+      border-radius: 999px;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: black;
+      color: #DAA520;
+    }
+
+    .services-grid
+    {
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px; /* spacing between cards */
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+    }
+    
+     .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .service-card, .project-card {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 1rem;
+      border-radius: 0.75rem;
+      transition: transform 0.3s, background-color 0.3s;
+      cursor: pointer;
+    }
+
+    .service-card:hover, .project-card:hover {
+      background-color: #DAA520;
+      color: black;
+      transform: scale(1.05);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+
+    .footer {
+      background-color: black;
+      color: white;
+      padding: 3rem 1rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+    }
+
+    .social-icons a {
+      margin-right: 1rem;
+      color: #DAA520;
+      text-decoration: none;
+    }
+  </style>
+</body>
+</html>

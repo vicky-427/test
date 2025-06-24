@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Cost Calculator (India)</title>
+    <link rel="stylesheet" href="SSSc.css">
+</head>
+<body>
+    <div class="logo-container">
+    <img src="logo.png" alt="Your Construction Company Logo" class="company-logo">
+</div>
+    
+    <h1>Construction Cost Calculator</h1>
+    
+    <div class="calculator-container">
+        <form id="calculatorForm">
+            <div class="form-group">
+                <label for="projectType">Project Type:</label>
+                <select id="projectType">
+                    <option value="residential">Residential Building</option>
+                    <option value="commercial">Commercial Building</option>
+                    <option value="industrial">Industrial Building</option>
+                    <option value="renovation">Renovation</option>
+                </select>
+            </div>
+            
+            <div class="form-group" id="bhkGroup">
+                <label>BHK Configuration:</label>
+                <div class="toggle-container">
+                    <div class="toggle-btn" data-bhk="1">1 BHK</div>
+                    <div class="toggle-btn" data-bhk="2">2 BHK</div>
+                    <div class="toggle-btn active" data-bhk="3">3 BHK</div>
+                    <div class="toggle-btn" data-bhk="4">4 BHK</div>
+                    <div class="toggle-btn" data-bhk="5">5+ BHK</div>
+                </div>
+                <input type="hidden" id="bhkValue" value="3">
+            </div>
+            
+            <div class="form-group">
+                <label for="squareFootage">Square Footage (Optional):</label>
+                <input type="number" id="squareFootage" placeholder="Enter total square footage (Optional)" min="1">
+                <div class="error" id="squareFootageError">Please enter a valid square footage</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="quality">Quality Standard:</label>
+                <select id="quality">
+                    <option value="basic">Basic (Economy)</option>
+                    <option value="standard" selected>Standard</option>
+                    <option value="premium">Premium</option>
+                    <option value="luxury">Luxury</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="startDate">Planned Start Date:</label>
+                <input type="date" id="startDate">
+                <div class="date-info">Construction costs vary by season. Monsoon season (June-Sep) typically increases costs, while winter (Nov-Feb) may offer better rates.</div>
+            </div>
+            
+            <button type="button" id="calculateBtn">Calculate Construction Costs</button>
+        </form>
+        
+        <div class="results" id="results">
+            <h2>Estimated Construction Costs</h2>
+            <div id="resultsContent"></div>
+            <div class="info-text">
+                Note: This is an estimate only. Actual costs may vary based on specific materials, labor rates in your location, and other factors not covered in this calculator.
+            </div>
+        </div>
+    </div>
+
+    <script src="SSSc.js"></script>
+</body>
+</html>

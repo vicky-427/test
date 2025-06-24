@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recent Projects - SSS Builders</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: #fff;
+    }
+
+    header {
+      background-color: black;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header img {
+      height: 96px;
+      width: auto;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #DAA520;
+      margin-top: 1rem;
+    }
+
+    .project-grid {
+      display: grid;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background-color: #DAA520;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-info {
+      padding: 1rem;
+      color: black;
+    }
+
+    .project-info h3 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-info p {
+      font-size: 0.9rem;
+      margin: 0.3rem 0;
+      color: #333;
+    }
+
+    .project-info span {
+      font-weight: bold;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./assets/logo.png" alt="SSS Builders Logo" />
+    <h1>Recent Projects - SSS Builders</h1>
+  </header>
+
+  <div class="project-grid">
+    <div class="project-card">
+      <img src="./assets/residential.jpg" alt="Luxury Villa - ECR" />
+      <div class="project-info">
+        <h3>Luxury Villa - ECR</h3>
+        <p><span>Type:</span> Residential</p>
+        <p><span>Description:</span> A stunning 4BHK sea-facing villa with modern interiors and premium finishes.</p>
+        <p><span>Budget:</span> ₹50,00,000</p>
+        <p><span>Address:</span> ECR Road, Chennai</p>
+        <p><span>Start Date:</span> 2023-02-01</p>
+        <p><span>End Date:</span> 2023-12-15</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="./assets/Commercial.jpg" alt="Commercial Complex - Anna Nagar" />
+      <div class="project-info">
+        <h3>Commercial Complex - Anna Nagar</h3>
+        <p><span>Type:</span> Commercial</p>
+        <p><span>Description:</span> Multi-floor office space with state-of-the-art infrastructure and parking.</p>
+        <p><span>Budget:</span> ₹1,20,00,000</p>
+        <p><span>Address:</span> Anna Nagar, Chennai</p>
+        <p><span>Start Date:</span> 2022-05-10</p>
+        <p><span>End Date:</span> 2023-03-30</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="./assets/commer1.jpg" alt="Apartment Project - Velachery" />
+      <div class="project-info">
+        <h3>Apartment Project - Velachery</h3>
+        <p><span>Type:</span> Apartment</p>
+        <p><span>Description:</span> 2 & 3 BHK apartments with modular kitchen, gym and children's play area.</p>
+        <p><span>Budget:</span> ₹3,00,00,000</p>
+        <p><span>Address:</span> coimabatore</p>
+        <p><span>Start Date:</span> 2021-07-15</p>
+        <p><span>End Date:</span> 2023-01-20</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="./assets/restore1.jpg" alt="Renovation" />
+      <div class="project-info">
+        <h3>Renovation</h3>
+        <p><span>Type:</span> Renovation</p>
+        <p><span>Description:</span> Complete home renovation with false ceiling, modern lighting and tiling.</p>
+        <p><span>Budget:</span> ₹15,00,000</p>
+        <p><span>Address:</span> pollachi</p>
+        <p><span>Start Date:</span> 2023-01-05</p>
+        <p><span>End Date:</span> 2023-06-10</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="./assets/things.jpg" alt="house" />
+      <div class="project-info">
+        <h3>house</h3>
+        <p><span>Type:</span> Resdiential</p>
+        <p><span>Description:</span> Complete home renovation with false ceiling, modern lighting and tiling.</p>
+        <p><span>Budget:</span> ₹15,00,000</p>
+        <p><span>Address:</span> kottur</p>
+        <p><span>Start Date:</span> 2023-01-05</p>
+        <p><span>End Date:</span> 2023-06-10</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
